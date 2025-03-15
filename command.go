@@ -24,7 +24,7 @@ func NewCmdFlags() *CmdFlags {
 	flag.IntVar(&cf.Del, "del", -1, "Specify a tofo by index to delete")
 	flag.IntVar(&cf.Toggle, "toggle", -1, "Specify a tofo by index to toggle")
 	flag.BoolVar(&cf.List, "list", false, "List all todos")
-
+    
 	flag.Parse()
 	return &cf
 }
